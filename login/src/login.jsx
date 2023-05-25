@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './css/login.css';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loginSuccess, setLoginSuccess] = useState(false);
@@ -19,6 +21,12 @@ const Login = () => {
       if (response.data.success) {
         // Login bem-sucedido
         setLoginSuccess(true);
+        console.log("resposta recebida");
+        if (response.data.role === 'Administrator') {
+          // Redirecionar para a página de administrador
+          console.log('Redirecionando para /adm');
+          return navigate('/adm');
+        }
       } else {
         // Login falhou
         setLoginSuccess(false);

@@ -1,0 +1,61 @@
+#admbox {
+    position: absolute;
+    width: 1540px;
+    height: 740px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #122A6E;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+#useradm, #idadm, #funcaoadm {
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    top: 10px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+#useradm {
+    left: 230px;
+}
+
+#idadm {
+    left: 630px;
+}
+
+#funcaoadm {
+    left: 1030px;
+}
+
+hr{
+    position: absolute;
+    width: 1538px;    
+    left: 0px;
+    top: 50px;
+    border: 0.5px solid #000000;
+}
+
+#buttonadm {
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 660px;
+    background: white;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+    font-family: 'IBM Plex Sans';
+    font-size: 40px;
+    color: #122A6E;
+}
